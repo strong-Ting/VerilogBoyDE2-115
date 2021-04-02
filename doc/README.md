@@ -14,6 +14,8 @@
 
 assembler/linker https://github.com/gbdev/rgbds
 
+C compiler http://gbdk.sourceforge.net/
+
 # doc 
 
 https://github.com/gbdev/awesome-gbdev
