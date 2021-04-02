@@ -1,4 +1,4 @@
-#Gameboy project
+# Gameboy project
 
 [1] https://github.com/zephray/VerilogBoy
 
@@ -10,10 +10,10 @@
 
 [5] https://github.com/MiSTer-devel/Gameboy_MiSTer
 
-#dev tool
+# dev tool
 
 assembler/linker https://github.com/gbdev/rgbds
 
-#doc 
+# doc 
 
 https://github.com/gbdev/awesome-gbdev
