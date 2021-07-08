@@ -1,0 +1,84 @@
+MIF/HEX Update report for top
+Thu Jul  8 14:41:39 2021
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Thu Jul  8 14:41:39 2021 ;
+; Revision Name         ; top                                   ;
+; Top-level Entity Name ; top                                   ;
+; Family                ; Cyclone IV E                          ;
+; Device                ; EP4CE115F29C7                         ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------------------------------+
+; MIF/HEX Update Processed Files                           ;
++----------------------------------------------------------+
+; File Name                                                ;
++----------------------------------------------------------+
+; /home/DICS/M10912039/VerilogBoy_DE2-115/TetrisGB.hex     ;
+; /home/DICS/M10912039/VerilogBoy_DE2-115/mario.mif        ;
+; /home/DICS/M10912039/VerilogBoy_DE2-115/tools/tobu_0.mif ;
+; /home/DICS/M10912039/VerilogBoy_DE2-115/tools/tobu_1.mif ;
+; /home/DICS/M10912039/VerilogBoy_DE2-115/tools/tobu_2.mif ;
+; /home/DICS/M10912039/VerilogBoy_DE2-115/tools/tobu_3.mif ;
++----------------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime MIF/HEX Update
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Thu Jul  8 14:41:35 2021
+Info: Command: quartus_cdb VerilogBoy_DE2-115 -c top --update_mif
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Warning (39023): Can't find Memory Initialization File top.mif -- skipped updates for this file
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File /home/DICS/M10912039/VerilogBoy_DE2-115/TetrisGB.hex File: /home/DICS/M10912039/VerilogBoy_DE2-115/TetrisGB.hex Line: 0
+    Info (39025): Processed Memory Initialization File /home/DICS/M10912039/VerilogBoy_DE2-115/mario.mif File: /home/DICS/M10912039/VerilogBoy_DE2-115/mario.mif Line: 0
+    Info (39025): Processed Memory Initialization File /home/DICS/M10912039/VerilogBoy_DE2-115/tools/tobu_0.mif File: /home/DICS/M10912039/VerilogBoy_DE2-115/tools/tobu_0.mif Line: 0
+    Info (39025): Processed Memory Initialization File /home/DICS/M10912039/VerilogBoy_DE2-115/tools/tobu_1.mif File: /home/DICS/M10912039/VerilogBoy_DE2-115/tools/tobu_1.mif Line: 0
+    Info (39025): Processed Memory Initialization File /home/DICS/M10912039/VerilogBoy_DE2-115/tools/tobu_2.mif File: /home/DICS/M10912039/VerilogBoy_DE2-115/tools/tobu_2.mif Line: 0
+    Info (39025): Processed Memory Initialization File /home/DICS/M10912039/VerilogBoy_DE2-115/tools/tobu_3.mif File: /home/DICS/M10912039/VerilogBoy_DE2-115/tools/tobu_3.mif Line: 0
+Info: Quartus Prime MIF/HEX Update was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 930 megabytes
+    Info: Processing ended: Thu Jul  8 14:41:39 2021
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

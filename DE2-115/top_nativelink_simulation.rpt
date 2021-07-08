@@ -1,0 +1,24 @@
+Info: Start Nativelink Simulation process
+Info: NativeLink has detected Verilog design -- Verilog simulation models will be used
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  RTL
+Family                :  cycloneive
+Quartus root          :  /home/DICS/M10912039/intelFPGA_lite/20.1/quartus/linux64/
+Quartus sim root      :  /home/DICS/M10912039/intelFPGA_lite/20.1/quartus/eda/sim_lib
+Simulation Tool       :  vcs
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  
+Sim SDF file          :  
+Sim dir               :  simulation/vcs
+
+=======================================================
+
+Info: Starting NativeLink simulation with VCS software
+Sourced NativeLink script /home/DICS/M10912039/intelFPGA_lite/20.1/quartus/common/tcl/internal/nativelink/vcs.tcl
+Info: Compiling and Simulating design test
+Running Command "/usr/cad/synopsys/vcs/cur/bin/vcs" -licqueue -gui -R -file top_rtl.vcs &
+Info: Compilation and Simulation of test bench file test was successful
+Info: NativeLink simulation flow was successful

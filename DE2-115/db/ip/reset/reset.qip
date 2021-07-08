@@ -1,0 +1,40 @@
+set_global_assignment -entity "reset" -library "reset" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "reset" -library "reset" -name IP_TOOL_VERSION "20.1"
+set_global_assignment -entity "reset" -library "reset" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "reset" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../../reset.sopcinfo"]
+set_global_assignment -entity "reset" -library "reset" -name SLD_INFO "QSYS_NAME reset HAS_SOPCINFO 1 GENERATION_ID 1625751056"
+set_global_assignment -library "reset" -name SLD_FILE [file join $::quartus(qip_path) "reset.debuginfo"]
+set_global_assignment -entity "reset" -library "reset" -name IP_TARGETED_DEVICE_FAMILY "Cyclone IV E"
+set_global_assignment -entity "reset" -library "reset" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone IV E}"
+set_global_assignment -entity "reset" -library "reset" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "reset" -name MISC_FILE [file join $::quartus(qip_path) "../../../reset.qsys"]
+set_global_assignment -entity "reset" -library "reset" -name IP_COMPONENT_NAME "cmVzZXQ="
+set_global_assignment -entity "reset" -library "reset" -name IP_COMPONENT_DISPLAY_NAME "cmVzZXQ="
+set_global_assignment -entity "reset" -library "reset" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "reset" -library "reset" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "reset" -library "reset" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "reset" -library "reset" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTYyNTc1MTA1Ng==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "reset" -library "reset" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBJViBF::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "reset" -library "reset" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::RVA0Q0UxMTVGMjlDNw==::QXV0byBERVZJQ0U="
+set_global_assignment -entity "reset" -library "reset" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Nw==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "reset" -library "reset" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "reset" -library "reset" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfRE9NQUlO::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "reset" -library "reset" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfUkVTRVRfRE9NQUlO::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "altera_avalon_reset_source" -library "reset" -name IP_COMPONENT_NAME "YWx0ZXJhX2F2YWxvbl9yZXNldF9zb3VyY2U="
+set_global_assignment -entity "altera_avalon_reset_source" -library "reset" -name IP_COMPONENT_DISPLAY_NAME "UmVzZXQgU291cmNlIEJGTSBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "altera_avalon_reset_source" -library "reset" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_avalon_reset_source" -library "reset" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_avalon_reset_source" -library "reset" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "altera_avalon_reset_source" -library "reset" -name IP_COMPONENT_VERSION "MjAuMQ=="
+set_global_assignment -entity "altera_avalon_reset_source" -library "reset" -name IP_COMPONENT_DESCRIPTION "QWx0ZXJhIFJlc2V0IFNvdXJjZSBCRk0="
+set_global_assignment -entity "altera_avalon_reset_source" -library "reset" -name IP_COMPONENT_PARAMETER "QVNTRVJUX0hJR0hfUkVTRVQ=::MQ==::QXNzZXJ0IHJlc2V0IGhpZ2g="
+set_global_assignment -entity "altera_avalon_reset_source" -library "reset" -name IP_COMPONENT_PARAMETER "SU5JVElBTF9SRVNFVF9DWUNMRVM=::Mw==::Q3ljbGVzIG9mIGluaXRpYWwgcmVzZXQ="
+
+set_global_assignment -library "reset" -name VERILOG_FILE [file join $::quartus(qip_path) "reset.v"]
+set_global_assignment -library "reset" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/verbosity_pkg.sv"]
+set_global_assignment -library "reset" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_reset_source.sv"]
+
+set_global_assignment -entity "altera_avalon_reset_source" -library "reset" -name IP_TOOL_NAME "altera_avalon_reset_source"
+set_global_assignment -entity "altera_avalon_reset_source" -library "reset" -name IP_TOOL_VERSION "20.1"
+set_global_assignment -entity "altera_avalon_reset_source" -library "reset" -name IP_TOOL_ENV "Qsys"

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2021.07.08.21:30:57"
+ outputDirectory="/home/DICS/M10912039/VerilogBoy_DE2-115/db/ip/reset/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone IV E"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="EP4CE115F29C7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="none" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset" direction="output" role="reset" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="reset:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP4CE115F29C7,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1625751056,AUTO_UNIQUE_ID=(altera_avalon_reset_source:20.1:ASSERT_HIGH_RESET=1,INITIAL_RESET_CYCLES=3)"
+   instancePathKey="reset"
+   kind="reset"
+   version="1.0"
+   name="reset">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1625751056" />
+  <parameter name="AUTO_DEVICE" value="EP4CE115F29C7" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <generatedFiles>
+   <file
+       path="/home/DICS/M10912039/VerilogBoy_DE2-115/db/ip/reset/reset.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/DICS/M10912039/VerilogBoy_DE2-115/db/ip/reset/submodules/verbosity_pkg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/DICS/M10912039/VerilogBoy_DE2-115/db/ip/reset/submodules/altera_avalon_reset_source.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="/home/DICS/M10912039/VerilogBoy_DE2-115/reset.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/DICS/M10912039/intelFPGA_lite/20.1/ip/altera/sopc_builder_ip/verification/altera_avalon_reset_source/altera_avalon_reset_source_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="reset">queue size: 0 starting:reset "reset"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="reset"><![CDATA["<b>reset</b>" reuses <b>altera_avalon_reset_source</b> "<b>submodules/altera_avalon_reset_source</b>"]]></message>
+   <message level="Debug" culprit="reset">queue size: 0 starting:altera_avalon_reset_source "submodules/altera_avalon_reset_source"</message>
+   <message level="Info" culprit="reset_source_0"><![CDATA["<b>reset</b>" instantiated <b>altera_avalon_reset_source</b> "<b>reset_source_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_avalon_reset_source:20.1:ASSERT_HIGH_RESET=1,INITIAL_RESET_CYCLES=3"
+   instancePathKey="reset:.:reset_source_0"
+   kind="altera_avalon_reset_source"
+   version="20.1"
+   name="altera_avalon_reset_source">
+  <generatedFiles>
+   <file
+       path="/home/DICS/M10912039/VerilogBoy_DE2-115/db/ip/reset/submodules/verbosity_pkg.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/DICS/M10912039/VerilogBoy_DE2-115/db/ip/reset/submodules/altera_avalon_reset_source.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="/home/DICS/M10912039/intelFPGA_lite/20.1/ip/altera/sopc_builder_ip/verification/altera_avalon_reset_source/altera_avalon_reset_source_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="reset" as="reset_source_0" />
+  <messages>
+   <message level="Debug" culprit="reset">queue size: 0 starting:altera_avalon_reset_source "submodules/altera_avalon_reset_source"</message>
+   <message level="Info" culprit="reset_source_0"><![CDATA["<b>reset</b>" instantiated <b>altera_avalon_reset_source</b> "<b>reset_source_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

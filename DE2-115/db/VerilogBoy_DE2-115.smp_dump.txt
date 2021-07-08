@@ -1,0 +1,76 @@
+
+State Machine - |top|uart:uart_inst|receiver:uart_rx|state
+Name state.RX_STATE_START state.RX_STATE_STOP state.RX_STATE_DATA 
+state.RX_STATE_START 0 0 0 
+state.RX_STATE_DATA 1 0 1 
+state.RX_STATE_STOP 1 1 0 
+
+State Machine - |top|uart:uart_inst|transmitter:uart_tx|state
+Name state.STATE_STOP state.STATE_DATA state.STATE_START state.STATE_IDLE 
+state.STATE_IDLE 0 0 0 0 
+state.STATE_START 0 0 1 1 
+state.STATE_DATA 0 1 0 1 
+state.STATE_STOP 1 0 0 1 
+
+State Machine - |top|boy:boy|ppu:ppu|r_next_backup
+Name r_next_backup.S_OWB r_next_backup.S_OFRD1B r_next_backup.S_OFRD1A r_next_backup.S_OFRD0B r_next_backup.S_OFRD0A r_next_backup.S_OAMRDB r_next_backup.S_SWW r_next_backup.S_FWAITB r_next_backup.S_FWAITA r_next_backup.S_FRD1B r_next_backup.S_FRD1A r_next_backup.S_FRD0B r_next_backup.S_FRD0A r_next_backup.S_FTIDB r_next_backup.S_FTIDA r_next_backup.S_OAMY r_next_backup.S_OAMX r_next_backup.S_BLANK r_next_backup.00000 
+r_next_backup.00000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+r_next_backup.S_BLANK 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+r_next_backup.S_OAMX 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+r_next_backup.S_OAMY 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+r_next_backup.S_FTIDA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+r_next_backup.S_FTIDB 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+r_next_backup.S_FRD0A 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+r_next_backup.S_FRD0B 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+r_next_backup.S_FRD1A 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+r_next_backup.S_FRD1B 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+r_next_backup.S_FWAITA 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+r_next_backup.S_FWAITB 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+r_next_backup.S_SWW 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+r_next_backup.S_OAMRDB 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_next_backup.S_OFRD0A 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_next_backup.S_OFRD0B 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_next_backup.S_OFRD1A 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_next_backup.S_OFRD1B 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_next_backup.S_OWB 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |top|boy:boy|ppu:ppu|r_state
+Name r_state.S_OWB r_state.S_OFRD1B r_state.S_OFRD1A r_state.S_OFRD0B r_state.S_OFRD0A r_state.S_OAMRDB r_state.S_OAMRDA r_state.S_SWW r_state.S_FWAITB r_state.S_FWAITA r_state.S_FRD1B r_state.S_FRD1A r_state.S_FRD0B r_state.S_FRD0A r_state.S_FTIDB r_state.S_FTIDA r_state.S_OAMY r_state.S_OAMX r_state.S_BLANK r_state.00000 
+r_state.00000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+r_state.S_BLANK 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+r_state.S_OAMX 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+r_state.S_OAMY 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+r_state.S_FTIDA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+r_state.S_FTIDB 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+r_state.S_FRD0A 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+r_state.S_FRD0B 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+r_state.S_FRD1A 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+r_state.S_FRD1B 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+r_state.S_FWAITA 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+r_state.S_FWAITB 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+r_state.S_SWW 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.S_OAMRDA 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.S_OAMRDB 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.S_OFRD0A 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.S_OFRD0B 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.S_OFRD1A 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.S_OFRD1B 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.S_OWB 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |top|boy:boy|ppu:ppu|pf_empty
+Name pf_empty.PF_FULL pf_empty.PF_INITB pf_empty.PF_EMPTY pf_empty.PF_HALF pf_empty.PF_FIN pf_empty.PF_INITA 
+pf_empty.PF_INITA 0 0 0 0 0 0 
+pf_empty.PF_FIN 0 0 0 0 1 1 
+pf_empty.PF_HALF 0 0 0 1 0 1 
+pf_empty.PF_EMPTY 0 0 1 0 0 1 
+pf_empty.PF_INITB 0 1 0 0 0 1 
+pf_empty.PF_FULL 1 0 0 0 0 1 
+
+State Machine - |top|boy:boy|dma:dma|state
+Name state.DMA_DELAY state.DMA_TRANSFER_WRITE_WAIT state.DMA_TRANSFER_WRITE_DATA state.DMA_TRANSFER_READ_DATA state.DMA_TRANSFER_READ_ADDR state.DMA_IDLE 
+state.DMA_IDLE 0 0 0 0 0 0 
+state.DMA_TRANSFER_READ_ADDR 0 0 0 0 1 1 
+state.DMA_TRANSFER_READ_DATA 0 0 0 1 0 1 
+state.DMA_TRANSFER_WRITE_DATA 0 0 1 0 0 1 
+state.DMA_TRANSFER_WRITE_WAIT 0 1 0 0 0 1 
+state.DMA_DELAY 1 0 0 0 0 1 
