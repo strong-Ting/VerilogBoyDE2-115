@@ -9,12 +9,12 @@ Gameboy system is implemented by VerilogBoy,and I port it to DE2-115.
 The project connects PS2 keyboard and UART interface to key controller of the GameBoy, so you can play the GameBoy by PS2 keyboard or communicate over UART.
 
 ```
-Keyboard map
+Keyboard Map
+
 UP:    W
 LEFT:  A
 RIGHT: D
 DOWN:  S
-
 SELECT: SPACE
 A: '
 B: ENTER
