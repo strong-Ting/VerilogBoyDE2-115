@@ -21,7 +21,7 @@ module top(
    output wire [7:0] VGA_G,
    output wire [7:0] VGA_B,
    
-   // WM8750 Codec
+   // Codec
    output wire AUDIO_MCLK,
    output wire AUDIO_BCLK,
    output wire AUDIO_DACDATA,
