@@ -4,7 +4,7 @@ Port VerilogBoy to Altera DE2-115
 
 Demo:
 
-![demo](https://github.com/strong-Ting/VerilogBoyDE2-115/tree/main/doc/tobu.jpg)
+![demo](https://github.com/strong-Ting/VerilogBoyDE2-115/blob/main/doc/tobu.jpg?raw=true)
 
 VerilogBoy : https://github.com/zephray/VerilogBoy
 
