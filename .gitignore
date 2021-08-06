@@ -1,2 +1,7 @@
 *.bak
 *incremental_db*
+Mario/
+TetrisGB.hex
+TetrisGB.ver
+mario.mif
+ILA/
