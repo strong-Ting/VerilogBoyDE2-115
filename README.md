@@ -21,6 +21,9 @@ Running open source Gameboy game [Tobu Tobu Girl](http://tangramgames.dk/tobutob
 
 I also run other games that are tetris and mario, and they are work well!
 
+demo video:
+[![demo video](https://github.com/strong-Ting/VerilogBoyDE2-115/blob/main/doc/tobu.jpg?raw=true)](https://www.youtube.com/watch?v=els84fNxumY)
+
 # reference source
 
 VerilogBoy : https://github.com/zephray/VerilogBoy
