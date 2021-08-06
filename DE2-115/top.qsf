@@ -201,6 +201,7 @@ set_location_assignment PIN_AC26 -to SW[5]
 set_location_assignment PIN_AD26 -to SW[6]
 set_location_assignment PIN_AB26 -to SW[7]
 set_location_assignment PIN_AB28 -to SW[0]
+set_global_assignment -name QSYS_FILE ILA/ILA.qsys
 set_global_assignment -name QIP_FILE rom/Tobu/tobu_3.qip
 set_global_assignment -name QIP_FILE rom/Tobu/tobu_2.qip
 set_global_assignment -name QIP_FILE rom/Tobu/tobu_1.qip

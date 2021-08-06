@@ -179,7 +179,7 @@ CartTobu tobu(
    .clk(clk_4),
    .q(tobuRomOut)
 );
-
+/*
 //mario
 wire [7:0] marioRomOut;
 CartMario	CartMario_inst (
@@ -195,8 +195,9 @@ Cart	Cart_rom (
 	.clock(clk_4),
 	.q(tetrisRomOut)
 );
-
-assign vb_crom_dout = (SW[2] == 1'd1) ? tobuRomOut : ((SW[1] == 1'd1) ? tetrisRomOut : marioRomOut);
+*/
+//assign vb_crom_dout = (SW[2:1] == 2'b00) ? tobuRomOut : ((SW[2:1] == 2'd01) ? tetrisRomOut : marioRomOut);
+assign vb_crom_dout = tobuRomOut;
 assign vb_din = (vb_ram_cs_n) ? (vb_crom_dout) : (vb_cram_dout);
 //assign vb_din = vb_crom_dout;
 

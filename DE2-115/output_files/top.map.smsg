@@ -1,2 +1,2 @@
-Info (10281): Verilog HDL Declaration information at ppu.v(227): object "pf_empty" differs only in case from object "PF_EMPTY" in the same scope File: /home/DICS/M10912039/VerilogBoy_DE2-115/VerilogBoyRtl/ppu.v Line: 227
-Warning (10273): Verilog HDL warning at boy.v(67): extended using "x" or "z" File: /home/DICS/M10912039/VerilogBoy_DE2-115/VerilogBoyRtl/boy.v Line: 67
+Info (10281): Verilog HDL Declaration information at ppu.v(227): object "pf_empty" differs only in case from object "PF_EMPTY" in the same scope File: /home/DICS/M10912039/VerilogBoyDE2-115/DE2-115/VerilogBoyRtl/ppu.v Line: 227
+Warning (10273): Verilog HDL warning at boy.v(67): extended using "x" or "z" File: /home/DICS/M10912039/VerilogBoyDE2-115/DE2-115/VerilogBoyRtl/boy.v Line: 67
