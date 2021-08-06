@@ -1,3 +1,8 @@
+/************************************************
+  The Verilog HDL code example is from the book
+  Computer Principles and Design in Verilog HDL
+  by Yamin Li, published by A JOHN WILEY & SONS
+************************************************/
 module ps2_keyboard (input clk,// 50 MHz
 							input clrn, //active low
 							input ps2_clk, // ps2 clock
