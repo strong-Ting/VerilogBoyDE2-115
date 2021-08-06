@@ -8,6 +8,17 @@ Gameboy system is implemented by VerilogBoy,and I port it to DE2-115.
 
 The project connects PS2 keyboard and UART interface to key controller of the GameBoy, so you can play the GameBoy by PS2 keyboard or communicate over UART.
 
+```
+Keyboard map
+UP:    W
+LEFT:  A
+RIGHT: D
+DOWN:  S
+
+SELECT: SPACE
+A: '
+B: ENTER
+```
 
 Game Cartridge is connected to on-chip memory of DE2-115 that is inited by game rom.
 
